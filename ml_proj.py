@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import copy
 import math
-data=pd.read_csv(r"C:\Users\Krishna\Downloads\real(1).csv", sep=";")
+data=pd.read_csv(r"student-mat.csv", sep=";")
 data=data[["X5 latitude", "Y house price of unit area"]]
 predict="Y house price of unit area"
 X_train=np.array(data.drop([predict], 1))
